@@ -1,0 +1,107 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.modalContent {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modalContent h2 {
+  margin-bottom: 20px;
+}
+
+.modalContent img {
+  margin: 10px 0;
+}
+
+.modalContent p {
+  margin: 10px 0;
+}
+
+.modalContent button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.modalContent button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode Styles */
+.dark .modalContent {
+  background-color: #2b2b3c;
+  color: #f1f1f1;
+}
+.readToggle {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.readToggle:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .modalContent {
+    padding: 20px;
+  }
+
+  .modalContent h2 {
+    font-size: 20px;
+  }
+
+  .modalContent p {
+    font-size: 14px;
+  }
+
+  .modalContent button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalContent {
+    padding: 15px;
+  }
+
+  .modalContent h2 {
+    font-size: 18px;
+  }
+
+  .modalContent p {
+    font-size: 13px;
+  }
+
+  .modalContent button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

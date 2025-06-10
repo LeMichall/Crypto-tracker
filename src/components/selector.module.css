@@ -1,0 +1,30 @@
+.select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  max-width: 314px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #1e1e2f;
+  color: white;
+  border-color: #555;
+}
+
+.select option {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .select {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .select {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,7 @@
+1.CustomHook for currency formatter -
+2.Pagination/infinite scroll+
+3.Responsive layout +
+4.Historical chart in modal - (need dependencies)
+5.React-markdown for description - (need dependencies)
+5.More Coin info +
+7.Improve visuals +
